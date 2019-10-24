@@ -1,0 +1,34 @@
+{
+  "name": "database-post-phase",
+  "version": "1.0.0",
+  "description": "- The point of this exercise is to help students be able to read and understand code as well as explain in either a written or oral way what is happening in code. This will increase students' overall comprehension of code and will give them practice since they will be knee deep in new code bases once they hit the floor.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon --ignore 'js/*' --exec babel-node --presets env,stage-2 app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dhansonTechtonic/database-read-it-phase.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dhansonTechtonic/database-read-it-phase/issues"
+  },
+  "homepage": "https://github.com/dhansonTechtonic/database-read-it-phase#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "fs": "0.0.1-security",
+    "mongoose": "^5.7.6",
+    "nodemon": "^1.19.4"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-2": "^6.24.1"
+  }
+}

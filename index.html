@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Delaney's Movie Database</title>
+    <link rel="stylesheet" href="https://use.typekit.net/mki8lfh.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>DMDB</h1>
+        <input type="search" placeholder="Search for a movie title" id="input">
+    </header>
+    <section class="carousel">
+        <div class="slider">
+            <h1>No movies! Add a movie now.</h1>
+        </div>
+    </section>
+    <section class="viewer">
+        <h1 id="no-movies">No movie selected. Select a movie to view!</h1>
+        <section class="movie-info">
+            <section>
+                <img>
+            </section>
+            <section>
+                <h1></h1>
+                <ul></ul>
+            </section>
+            <section>
+                <p></p>
+            </section>
+        </section>
+    </section>
+    <section>
+        <form id="addMovieForm">
+            <input placeholder="Title" name="title" type="text" id="title">
+            <input placeholder="Director" name="director" type="text" id="director">
+            <input placeholder="Year" name="year" type="number" id="year" min="0">
+            <input placeholder="Plot" name="plot" type="text" id="plot">
+            <input placeholder="Rating" name="rating" type="number" id="rating" max="10" min="0">
+            <h2>Do you have this movie?</h2>
+            <section class="radio-group">
+                            <p>Yes</p>
+                            <input name="haveIt" type="radio" value="true">
+                            <p>No</p>
+                            <input name="haveIt" type="radio" value="false">
+            </section>
+            <input id="cover" type="file" accept=".jpg, .jpeg, .png" onchange="AddMovies._handleImageUpload()">
+            <img id="addMovieCoverImage" class="tableImg" alt="book cover image" src="assets/generic.jpg" width="150" height="200"/>
+            <button type="submit" id="addMovieButton">Submit</button>
+        </form>
+        <form id="editMovieForm">
+            <input placeholder="Title" name="title" type="text" id="titleEdit">
+            <input placeholder="Director" name="director" type="text" id="directorEdit">
+            <input placeholder="Year" name="year" type="number" id="yearEdit" min="0">
+            <input placeholder="Plot" name="plot" type="text" id="plotEdit">
+            <input placeholder="Rating" name="rating" type="number" id="ratingEdit" max="10" min="0">
+            <h2>Do you have this movie?</h2>
+            <section class="radio-groupEdit">
+                <p>Yes</p>
+                <input name="haveIt" type="radio" value="true">
+                <p>No</p>
+                <input name="haveIt" type="radio" value="false">
+            </section>
+            <input id="coverEdit" type="file" accept=".jpg, .jpeg, .png" onchange="EditMovies._handleImageUpload()">
+            <img id="editMovieCoverImage" class="tableImg" alt="book cover image" src="assets/generic.jpg" width="150"
+                height="200" />
+            <button type="submit" id="editMovieButton">Submit</button>
+        </form>
+    </section>
+    <script type="text/javascript" src="/js/Carousel.js"></script>
+    <script type="text/javascript" src="/js/Viewer.js"></script>
+    <script type="text/javascript" src="/js/AddMovies.js"></script>
+    <script type="text/javascript" src="/js/EditMovies.js"></script>
+    <script type="text/javascript" src="/js/MovieDB.js"></script>
+    <script type="text/javascript" src="/js/SearchBar.js"></script>
+</body>
+</html>
