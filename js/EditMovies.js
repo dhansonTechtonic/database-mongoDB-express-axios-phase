@@ -5,12 +5,14 @@ class EditMovies {
     }
 
     static _bindEvents() {
-        document.getElementById('editMovieButton').addEventListener('click', EditMovies.collectFormData);
+        document.getElementsByClassName('editMovieButton')[0].addEventListener('click', EditMovies.collectFormData);
     }
 
     static async populateEditForm(e) {
         this.id = e.target.id;
-        var movie = await MovieDB.getMovieById(id);
+        document.getElementsByClassName('editMovieButton')[0].setAttribute('id', e.target.id);
+        var movie = await MovieDB.getMovieById(e.target.id);
+        movie = movie[0];
         var form = document.getElementById('editMovieForm');
         form.setAttribute('class', 'editMovieFormShown');
         form.removeAttribute('id');        
@@ -30,14 +32,14 @@ class EditMovies {
         }
         var radios = inputs[6].children;
         for (var i = 0; i < radios.length; i++) {
-            if (radios[i].value == movie.haveIt.toString()) {
+            if (radios[i].value == movie.haveit.toString()) {
                 radios[i].checked = true;
             }
         }
         inputs[8].setAttribute('src', movie.cover);
     }
 
-    static async collectFormData(e) {
+    static async collectFormData (e) {
         e.preventDefault();
         var formData = {};
         formData.title = document.getElementById('titleEdit').value;
@@ -49,11 +51,11 @@ class EditMovies {
         var radios = document.getElementsByClassName('radio-groupEdit')[0].children;
         for (var i = 0, length = radios.length; i < length; i++) {
             if (radios[i].checked) {
-                formData.haveIt = radios[i].value;
+                formData.haveit = radios[i].value;
                 break;
             }
         }
-        MovieDB.editMovie(formData, id);
+        MovieDB.editMovie(formData, this.id);
         document.getElementsByClassName('editMovieFormShown')[0].reset();
         document.getElementsByClassName('editMovieFormShown')[0].setAttribute('id', 'editMovieForm');
         document.getElementsByClassName('editMovieFormShown')[0].removeAttribute('class');

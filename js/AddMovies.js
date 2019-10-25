@@ -19,7 +19,7 @@ class AddMovies{
         var radios = document.getElementsByClassName('radio-group')[0].children;
         for (var i = 0, length = radios.length; i < length; i++) {
             if (radios[i].checked) {
-                formData.haveIt = radios[i].value;
+                formData.haveit = radios[i].value;
                 break;
             }
         }

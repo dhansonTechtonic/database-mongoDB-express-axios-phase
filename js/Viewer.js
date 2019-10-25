@@ -1,27 +1,29 @@
 class Viewer {
     static async handleImageClick (e){
         var movies = await MovieDB.getMovieById(e.target.id);
+        var movie = movies[0];
         var noMovies = document.getElementById("no-movies");
 
         if (noMovies) {
             noMovies.remove();
-        }
+        }  
+
 
                 var movieInfo = document.getElementsByClassName("movie-info")[0].children;
 
-                movieInfo[0].children[0].setAttribute("src", movies.cover);
-                movieInfo[0].children[0].setAttribute("alt", movies.title);
-                movieInfo[1].children[0].innerHTML = movies.title;
+                movieInfo[0].children[0].setAttribute("src", movie.cover);
+                movieInfo[0].children[0].setAttribute("alt", movie.title);
+                movieInfo[1].children[0].innerHTML = movie.title;
 
                 var li1 = document.createElement('li');
-                li1.innerHTML = "Director: " + movies.director;
+                li1.innerHTML = "Director: " + movie.director;
                 var li2 = document.createElement('li');
-                li2.innerHTML = "Year: " + movies.year;
+                li2.innerHTML = "Year: " + movie.year;
                 var li3 = document.createElement('li');
-                li3.innerHTML = "Rating: " + movies.rating + "/10";
+                li3.innerHTML = "Rating: " + movie.rating + "/10";
                 var li4 = document.createElement('li');
-
-                if (movies.haveIt) {
+                
+                if (movie.haveit === "true") {
                     li4.innerHTML = "Have It? Yes!";
                 } else {
                     li4.innerHTML = "Have it? No :(";
@@ -31,13 +33,13 @@ class Viewer {
 
                 movieInfo[1].children[1].append(li1, li2, li3, li4);
 
-                movieInfo[2].children[0].innerHTML = movies.plot;
+                movieInfo[2].children[0].innerHTML = movie.plot;
                 var btn = document.createElement('button');
-                btn.setAttribute('id', movies._id);
+                btn.setAttribute('id', movie.prim);
                 btn.innerHTML = 'Delete';
                 btn.addEventListener('click', Viewer.handleDelete);
                 var btnEdit = document.createElement('button');
-                btnEdit.setAttribute('id', movies._id);
+                btnEdit.setAttribute('id', movie.prim);
                 btnEdit.innerHTML = 'Edit';
                 btnEdit.addEventListener('click', EditMovies.populateEditForm);
                 if (movieInfo[2].children.length == 1){

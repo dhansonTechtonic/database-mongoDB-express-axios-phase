@@ -1,4 +1,2 @@
-//ignores files so they aren't pushed up to git
-
 .env
 node_modules

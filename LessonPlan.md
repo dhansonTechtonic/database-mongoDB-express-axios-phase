@@ -1,15 +1,15 @@
-# Setting Up the MongoDB, axios, Express phase Lesson
+# Setting Up the postgresql, axios, Express phase Lesson
 
 ## Review
 - [ ] **Ask questions to determine if the previously taught content was absorbed/understood and address misconceptions if needed**
 
 - [ ] **Ask about learners' previous experience/familiarity with the topic at hand**
 
-What do you already know about Express, axios, or MongoDB? What do you know about setting up the environment for a full stack application? Have you ever built an application from the ground up?
+What do you already know about Express, axios, or postgresql? What do you know about setting up the environment for a full stack application? Have you ever built an application from the ground up?
 
 - [ ] **State main goal of covering this topic**
 
-The main goal of covering this topic is to give students practice setting up Express, axios, MongoDB, and a full stack application.
+The main goal of covering this topic is to give students practice setting up Express, axios, postgresql, and a full stack application.
 
 ------------------------------------------------------------------------------------------------------------------------------
 
@@ -22,7 +22,7 @@ No lesson prep materials needed here
 ## Overview
 - [ ] **Provide a general overview of the new topic/concept**
 
-Express is a fast, unopinionated, minimalist web framework for Node.js. MongoDB is a cross-platform document-oriented database program. Classified as a NoSQL database program, MongoDB uses JSON-like documents with schema. MongoDB is developed by MongoDB Inc. and licensed under the Server Side Public License (SSPL). Axios is a promise based HTTP client for the browser and Node.js. 
+Express is a fast, unopinionated, minimalist web framework for Node.js. postgresql is a cross-platform document-oriented database program. Classified as a NoSQL database program, postgresql uses JSON-like documents with schema. postgresql is developed by postgresql Inc. and licensed under the Server Side Public License (SSPL). Axios is a promise based HTTP client for the browser and Node.js. 
 
 - [ ] **Explain what students can expect during this learning session**
 
@@ -44,7 +44,7 @@ Students can expect to be guided through starting to build a full stack applicat
 
 - [ ] **Create and state the content learning objectives using a "Students will be able to... (SWBAT)" statement, Bloom's action verbs, and the forms and functions of language that students will use to display their learning**
 
-Students will be able to know how to build an Express app from the ground up with a MongoDB database and using axios to make HTTP requests.
+Students will be able to know how to build an Express app from the ground up with a postgresql database and using axios to make HTTP requests.
 
 - [ ] **Give context around how mastery of this concept ties into the overarching learning goal from the review section**
 
@@ -52,7 +52,7 @@ Mastery of this concept will give students a deeper understanding of how to buil
 
 - [ ] **Orient them as to why this learning is important and what it's benefits are for them**
 
-Learning how to build a full stack application is important because this is what the students will be doing as developers and they will be using Express, axios, and MongoDB frequently.
+Learning how to build a full stack application is important because this is what the students will be doing as developers and they will be using Express, axios, and postgresql frequently.
 
 ------------------------------------------------------------------------------------------------------------------------------
 
@@ -73,7 +73,7 @@ No lesson materials yet
 
 - [ ] **Describe the general concept, making links to what students have seen before**
 
-The general concept is setting up the environment for building a full stack application using Express, Node.js, MongoDB, and axios.
+The general concept is setting up the environment for building a full stack application using Express, Node.js, postgresql, and axios.
 
 - [ ] **Discuss steps involved**
 
@@ -94,7 +94,7 @@ Walk through setting up the environment for the database project. More details w
 
 - [ ] **Group discussions - allow students to articulate what they saw you do**
 
-How did I get the connection string from MongoDB? Why did I need to npm install all these packages? Which packages did I install? What does babel do in this case? What does nodemon do?
+How did I get the connection string from postgresql? Why did I need to npm install all these packages? Which packages did I install? What does babel do in this case? What does nodemon do?
 
 ------------------------------------------------------------------------------------------------------------------------------
 
@@ -113,7 +113,7 @@ Help students step through the code to explain and comment what is going on in i
 
 - [ ] **Instructor acts as a facilitator**
 
-Have the students ask questions about what is going on in the files in this project. Go over .babelrc, .env, .gitignore, .jshintrc, app.js, db.js and package.json
+Have the students ask questions about what is going on in the files in this project. Go over .babelrc, .env, .gitignore, .jshintrc, app.js, and package.json
 
 - [ ] **Have learners explain how and why using the language objectives as many times and ways as possible**
 

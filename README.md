@@ -1,6 +1,6 @@
-# database-mongoDB-express-axios-phase
+# database-postgresql-express-axios-phase
 ## Overview
-- The point of this exercise is to help students to be able to set up an application from the ground up using Node.js, express, mongoDB, axios, and mongoose. It is important to know how to do this so students can apply their knowledge to their projects on the floor.
+- The point of this exercise is to help students to be able to set up an application from the ground up using Node.js, express, postgresql, axios, and mongoose. It is important to know how to do this so students can apply their knowledge to their projects on the floor.
 
 ## Instructions
 
@@ -108,7 +108,7 @@ Will be using all static methods. At the end of the file the init function shoul
 
 - parameters: none
 
-* [x] populateEditForm: will be asynchronous and will use this.id which will be set to e.target.id and ```MovieDB.getMovieById()``` to populate the edit form with information on that movie that was selected. In order to make the modal pop up you will need to add a class attribute to ```editMovieForm``` called ```editMovieFormShown``` and remove the id.
+* [x] populateEditForm: will be asynchronous and will use e.target.id and ```MovieDB.getMovieById()``` to populate the edit form with information on that movie that was selected. In order to make the modal pop up you will need to add a class attribute to ```editMovieForm``` called ```editMovieFormShown``` and remove the id.
 
 - parameters: e or event
 
@@ -118,30 +118,14 @@ Will be using all static methods. At the end of the file the init function shoul
 
 ### Backend
 
-#### /models/Database.js
-
-* [x] Will need to import mongoose
-
-* [x] Will need to make a new Schema called ```Database``` and the schema will need to be ```{
-    title: String,
-    director: String,
-    year: String,
-    cover: String,
-    plot: String,
-    rating: Number,
-    haveIt: Boolean
-}```.
-
-* [x] Will need to export Database using ```mongoose.model```
-
 #### /controllers/DatabaseController.js
 
-* [x] router.post: endpoint will be '/'. Will be using ```Database.insertMany```.
+* [x] router.post: endpoint will be '/'. Will be using ```pool.insertMany```.
 
-* [x] router.put: endpoint will be 'edit?'. Will be using ```Database.findByIdAndUpdate```.
+* [x] router.put: endpoint will be 'edit?'. Will be using ```pool.findByIdAndUpdate```.
 
-* [x] router.get: endpoint will be '/'. Will be using ```Database.find```.
+* [x] router.get: endpoint will be '/'. Will be using ```pool.find```.
 
-* [x] router.get: endpoint will be '/:id'. Will be using ```Database.findById```.
+* [x] router.get: endpoint will be '/:id'. Will be using ```pool.findById```.
 
-* [x] router.delete: endpoint will be '/deleteBy?'. Will be using ```Database.deleteOne```.
+* [x] router.delete: endpoint will be '/deleteBy?'. Will be using ```pool.deleteOne```.
