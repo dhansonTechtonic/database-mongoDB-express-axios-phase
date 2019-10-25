@@ -49,7 +49,7 @@ class Viewer {
     static async handleDelete(e) {
         var id = e.target.id;
         await MovieDB.deleteMovie(id);
-        var movies = await MovieDB.getMovies()
+        var movies = await MovieDB.getMovies();
         if (movies.length === 1) {
             Carousel.populateCarousel([]);
         }else{
