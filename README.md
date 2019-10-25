@@ -5,22 +5,22 @@
 ## Instructions
 ### Front End
 #### MovieDB.js
-[X] postMovie: uses axios to post a movie to the database
+* [x] postMovie: uses axios to post a movie to the database
  
  - parameters: formData
 
-[X] editMovie: uses axios to edit a movie in the database by id
+* [x] editMovie: uses axios to edit a movie in the database by id
 
  - parameters: formData, id
 
- [X] deleteMovie: uses axios to delete a movie in the database by id
+ * [x] deleteMovie: uses axios to delete a movie in the database by id
 
  - parameters: id
 
- [X] getMovies: uses axios to get all movies in the database
+ * [x] getMovies: uses axios to get all movies in the database
 
  - parameters: none
 
- [X] editMovie: uses axios to get a specific movie in the database by id
+ * [x] editMovie: uses axios to get a specific movie in the database by id
 
  - parameters: id
