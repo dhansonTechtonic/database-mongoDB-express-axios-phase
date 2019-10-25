@@ -1,10 +1,10 @@
 class SearchBar {
 
     static init () {
-        SearchBar.bindEvents();
+        SearchBar._bindEvents();
     }
 
-    static bindEvents() {
+    static _bindEvents() {
         document.getElementById('input').addEventListener('input', SearchBar.handleInput);
     }
 

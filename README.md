@@ -59,3 +59,37 @@ Will be using all static methods. At the end of the file the init function shoul
  * [x] handleDelete: will be asynchronous and will delete the selected movie from the database as well as clearing out the ```viewer```.
 
  - parameters: e or event
+
+ #### SearchBar.js
+
+Will be using all static methods. At the end of the file the init function should be called on 'DomContentLoaded'.
+
+* [x] init: will call ```SearchBar._bindEvents()```.
+
+- parameters: none
+
+* [x] _bindEvents: will bind ```SearchBar.handleInput``` to ```input```.
+
+- parameters: none
+
+* [x] handleInput: will be asynchronous and will use ```MovieDB.getMovies()``` to populate the carousel based on what is typed into the search bar. There will need to be a temporary array to hold the results of the search.
+
+- parameters: e or event
+
+#### AddMovies.js
+
+Will be using all static methods. At the end of the file the init function should be called on 'DomContentLoaded'.
+
+* [x] init: will call ```AddMovies._bindEvents()```.
+
+- parameters: none
+
+* [x] _bindEvents: will bind ```AddMovies.collectFormData``` to ```addMovieButton```.
+
+- parameters: none
+
+* [x] collectFormData: will be asynchronous and will collect the data from the form and make it into an object. It will post that object to the database using ```MovieDB.postMovie()```. Then it will repopulate the carousel with the new movie and reset the form.
+
+- parameters: e or event
+
+* [x] handleImageUpload: this will be provided for you but we will walk through what it is doing in class

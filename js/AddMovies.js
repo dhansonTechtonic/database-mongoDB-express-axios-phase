@@ -23,6 +23,7 @@ class AddMovies{
                 break;
             }
         }
+        MovieDB.postMovie(formData);
         Carousel.populateCarousel(await MovieDB.getMovies());
         document.getElementById('addMovieForm').reset();
         document.getElementById('addMovieCoverImage').setAttribute('src', './assets/generic.jpg');
