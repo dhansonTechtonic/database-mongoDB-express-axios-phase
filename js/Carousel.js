@@ -14,7 +14,8 @@ class Carousel{
     }
 
     static populateCarousel(movies){
-        if (movies === undefined) {
+        console.log(movies);
+        if (movies === undefined || movies.length === 0) {
             var slider = document.getElementsByClassName('slider')[0];
             if (slider.children.length > 0) {
                 while (slider.firstChild) slider.removeChild(slider.firstChild);
@@ -23,6 +24,11 @@ class Carousel{
             h1.innerHTML = 'No movies! Add a movie now.';
             slider.append(h1);
         } else {
+            for (let i = 0; i < movies.length; i++) {
+                if (movies[i].title.charAt(0) === 'T' && movies[i].title.charAt(1) === 'h' && movies[i].title.charAt(2) === 'e' && movies[i].title.charAt(3) === ' '){
+                    movies[i].title = movies[i].title.substring(4);
+                }
+            }
             movies = movies.sort((a,b)=>{
                 if (a.title < b.title) {return -1;}
                     if (a.title>b.title) {return 1;}

@@ -230,5 +230,9 @@ form input:focus{
    header input{
        width: 80%;
    }
+
+   form input {
+       width: 20em;
+   }
 }
 /*------------------MEDIA QUERIES---------------------*/

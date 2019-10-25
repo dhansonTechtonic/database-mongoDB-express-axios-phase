@@ -23,9 +23,7 @@ class AddMovies{
                 break;
             }
         }
-        var movie = await MovieDB.postMovie(formData);
-        Carousel.movies.push(movie);
-        Carousel.populateCarousel(Carousel.movies);
+        Carousel.populateCarousel(await MovieDB.getMovies());
         document.getElementById('addMovieForm').reset();
         document.getElementById('addMovieCoverImage').setAttribute('src', './assets/generic.jpg');
     }
