@@ -120,12 +120,12 @@ Will be using all static methods. At the end of the file the init function shoul
 
 #### /controllers/DatabaseController.js
 
-* [x] router.post: endpoint will be '/'. Will be using ```pool.insertMany```.
+* [x] router.post: endpoint will be '/'. Will be using ```pool.query``` and ```INSERT```.
 
-* [x] router.put: endpoint will be 'edit?'. Will be using ```pool.findByIdAndUpdate```.
+* [x] router.put: endpoint will be 'edit?'. Will be using ```pool.query``` and ```UPDATE```.
 
-* [x] router.get: endpoint will be '/'. Will be using ```pool.find```.
+* [x] router.get: endpoint will be '/'. Will be using ```pool.query``` and ```SELECT```.
 
-* [x] router.get: endpoint will be '/:id'. Will be using ```pool.findById```.
+* [x] router.get: endpoint will be '/:id'. Will be using ```pool.query``` and ```SELECT```.
 
-* [x] router.delete: endpoint will be '/deleteBy?'. Will be using ```pool.deleteOne```.
+* [x] router.delete: endpoint will be '/deleteBy?'. Will be using ```pool.query``` and ```DELETE```.
