@@ -90,7 +90,7 @@ Will be using all static methods. At the end of the file the init function shoul
 
 - parameters: none
 
-* [x] collectFormData: will be asynchronous and will collect the data from the form and make it into an object. It will post that object to the database using ```MovieDB.postMovie()```. Then it will repopulate the carousel with the new movie and reset the form.
+* [x] collectFormData: will be asynchronous and will collect the data from the form and make it into an object. It will post that object to the database using ```MovieDB.postMovie()```. Then it will repopulate the carousel with the new movie and reset the form. There will need to be form validation.
 
 - parameters: e or event
 
@@ -112,7 +112,7 @@ Will be using all static methods. At the end of the file the init function shoul
 
 - parameters: e or event
 
-* [x] collectFormData: will be asynchronous and will collect the form data and make an object out of it that will be put to the database using ```MovieDB.editMovie```. The form will need to be reset, the modal closed, and the carousel repopulated.
+* [x] collectFormData: will be asynchronous and will collect the form data and make an object out of it that will be put to the database using ```MovieDB.editMovie```. The form will need to be reset, the modal closed, and the carousel repopulated. There will need to be form validation.
 
 - parameters: e or event
 
