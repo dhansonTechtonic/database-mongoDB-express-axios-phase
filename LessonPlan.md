@@ -1,14 +1,15 @@
-# Reading and Commenting Code Lesson
+# Setting Up the MongoDB, axios, Express phase Lesson
 
 ## Review
 - [ ] **Ask questions to determine if the previously taught content was absorbed/understood and address misconceptions if needed**
+
 - [ ] **Ask about learners' previous experience/familiarity with the topic at hand**
 
-How comfortable would you say you are with reading code? Do you ever get stuck reading code? What does commenting out code do for the developer?
+What do you already know about Express, axios, or MongoDB? What do you know about setting up the environment for a full stack application? Have you ever built an application from the ground up?
 
 - [ ] **State main goal of covering this topic**
 
-The main goal of covering this topic is to give students practice reading and annotating code so that they are familiar with this practice and can read and understand large code bases on the floor.
+The main goal of covering this topic is to give students practice setting up Express, axios, MongoDB, and a full stack application.
 
 ------------------------------------------------------------------------------------------------------------------------------
 
@@ -21,11 +22,11 @@ No lesson prep materials needed here
 ## Overview
 - [ ] **Provide a general overview of the new topic/concept**
 
-Reading and understanding code can be difficult so it is best to step through code one line at a time and one file at a time. Commenting out what is happening in the code can help with understanding it later.
+Express is a fast, unopinionated, minimalist web framework for Node.js. MongoDB is a cross-platform document-oriented database program. Classified as a NoSQL database program, MongoDB uses JSON-like documents with schema. MongoDB is developed by MongoDB Inc. and licensed under the Server Side Public License (SSPL). Axios is a promise based HTTP client for the browser and Node.js. 
 
 - [ ] **Explain what students can expect during this learning session**
 
-Students can expect to be given a code base that they will read, interact with, and then comment on.
+Students can expect to be guided through starting to build a full stack application using these technologies and then will be making a movie database on top of this.
 
 - [ ] **Refer to the resources below to think through your lesson**
 
@@ -43,15 +44,15 @@ Students can expect to be given a code base that they will read, interact with, 
 
 - [ ] **Create and state the content learning objectives using a "Students will be able to... (SWBAT)" statement, Bloom's action verbs, and the forms and functions of language that students will use to display their learning**
 
-Students will be able to know how to read and understand code as well as have an understanding of how to comment code effectively.
+Students will be able to know how to build an Express app from the ground up with a MongoDB database and using axios to make HTTP requests.
 
 - [ ] **Give context around how mastery of this concept ties into the overarching learning goal from the review section**
 
-Mastery of this concept will give students a deeper understanding of how to read/navigate different code bases of varying sizes.
+Mastery of this concept will give students a deeper understanding of how to build full stack applications.
 
 - [ ] **Orient them as to why this learning is important and what it's benefits are for them**
 
-Learning how to read code is important because this is what the students will be doing as developers and they need to know how to read and understand a large code base quickly.
+Learning how to build a full stack application is important because this is what the students will be doing as developers and they will be using Express, axios, and MongoDB frequently.
 
 ------------------------------------------------------------------------------------------------------------------------------
 
@@ -72,16 +73,13 @@ No lesson materials yet
 
 - [ ] **Describe the general concept, making links to what students have seen before**
 
-The general concept is talking about what is happening in the code and then writing that in the comments. It's like describing a machine or procedure or recipe.
+The general concept is setting up the environment for building a full stack application using Express, Node.js, MongoDB, and axios.
 
 - [ ] **Discuss steps involved**
 
-Step through the provided codepen and talk about what is going on in the code. Comment the code as you go along and be as descriptive with your comments as possible.
+Walk through setting up the environment for the database project. More details will be in the slides.
 
 - [ ] **Discuss new terms/definitions involved**
-
-    pseudocode: an informal high-level description of the operating principle of a computer program or other algorithm
-
 - [ ] **Demonstrate steps involved with metacognitive dialogue (think-alouds)**
 
   - [Think-Aloud Protocol](https://www.teachervision.com/problem-solving/think-aloud-strategy)
@@ -96,13 +94,13 @@ Step through the provided codepen and talk about what is going on in the code. C
 
 - [ ] **Group discussions - allow students to articulate what they saw you do**
 
-Did what I say the code is doing actually match your perception of what is happening in the code? Did I describe it in an order that made sense?
+How did I get the connection string from MongoDB? Why did I need to npm install all these packages? Which packages did I install? What does babel do in this case? What does nodemon do?
 
 ------------------------------------------------------------------------------------------------------------------------------
 
 Your lesson prep materials go here 
 
-[I do](https://codepen.io/delihanson/pen/GRRWYrV?editors=0012)
+[I do](https://docs.google.com/presentation/d/1uwimx8XbFGVoYQ6uQJcsSYgflu5khCLrZMCUSERinuE/edit?usp=sharing)
 
 ------------------------------------------------------------------------------------------------------------------------------
 
@@ -115,7 +113,7 @@ Help students step through the code to explain and comment what is going on in i
 
 - [ ] **Instructor acts as a facilitator**
 
-Have the students tell you what to comment on which line of code.
+Have the students ask questions about what is going on in the files in this project. Go over .babelrc, .env, .gitignore, .jshintrc, app.js, db.js and package.json
 
 - [ ] **Have learners explain how and why using the language objectives as many times and ways as possible**
 
@@ -129,13 +127,13 @@ Then have the students pair up and explain to each other what is happening in th
 
 Your lesson prep materials go here
 
-[We do, same as I do](https://codepen.io/delihanson/pen/GRRWYrV?editors=0012)
+Files in project are already detailed
 
 ------------------------------------------------------------------------------------------------------------------------------
 ### YOU DO:
 - [ ] **Assign an individual practice opportunity for students to engage in learning and grapple with the content**
 
-Have the students comment the code themselves
+Have the students use the README.md to complete the database project
 
 - [ ] **Provide extension activities for speedy learners**
 
@@ -145,18 +143,18 @@ If they get done early have the students help other students.
 
 - [ ] **Instructors reinforce and assess learners' application of new content/language**
 
-Have someone come up and put in the codepen under YOU DO how they solved the problem.
+Do a code review with the students to make sure their code is working, they are using best practices, and there are no errors or warnings in their console.
 
 ------------------------------------------------------------------------------------------------------------------------------
 
 Your lesson prep materials go here
-[You do, same as I do](https://codepen.io/delihanson/pen/GRRWYrV?editors=0012)
+[Best practices in code](https://www.w3.org/wiki/JavaScript_best_practices)
 ------------------------------------------------------------------------------------------------------------------------------
 
 ## Summary
 - [ ] **Highlight the key points of the lesson**
 
-What is reading code? How do we comment code? Why is it important to learn how to do?
+What was difficult about building the application? What do you need to set up in order to build your application? How do the different files interact with each other? What is going on in your code?
 
 - [ ] **Review the learning objectives with the class**
 

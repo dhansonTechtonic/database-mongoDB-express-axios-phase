@@ -7,7 +7,6 @@ router.use(bodyParser.urlencoded({ extended: true, limit: '5mb' }));
 router.use(bodyParser.json());
 
 router.post('/', function (req, res) {
-    console.log(req.body)
     Database.insertMany(
         req.body,
         (err, movie) => {
@@ -21,7 +20,6 @@ router.post('/', function (req, res) {
 });
 
 router.put('/edit?', function (req, res) {
-    console.log(req.params.id);
     Database.findByIdAndUpdate({ '_id': req.query.id }, req.body, { new: true }, (err, movie) => {
         if (err) {
             console.log(err);

@@ -1,8 +1,7 @@
-var id;
-
 class EditMovies {
     static init() {
         EditMovies._bindEvents();
+        this.id = '';
     }
 
     static _bindEvents() {
@@ -10,7 +9,7 @@ class EditMovies {
     }
 
     static async populateEditForm(e) {
-        id = e.target.id;
+        this.id = e.target.id;
         var movie = await MovieDB.getMovieById(id);
         var form = document.getElementById('editMovieForm');
         form.setAttribute('class', 'editMovieFormShown');

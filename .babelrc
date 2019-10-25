@@ -1,3 +1,5 @@
+//sets the babel options, here is a link to the documentation https://babeljs.io/docs/en/presets. preset-env is a smart preset that allows you to use the latest JavaScript without needing to micromanage which syntax transforms (and optionally, browser polyfills) are needed by your target environment(s). This both makes your life easier and JavaScript bundles smaller! Any transforms in stage-x presets are changes to the language that haven't been approved to be part of a release of JavaScript (such as ES6/ES2015). So stage-2 is raft: initial spec.
+
 {
     "presets": [
         "env",
