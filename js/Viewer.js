@@ -40,8 +40,10 @@ class Viewer {
                 btnEdit.setAttribute('id', movies._id);
                 btnEdit.innerHTML = 'Edit';
                 btnEdit.addEventListener('click', EditMovies.populateEditForm);
-                movieInfo[2].children[0].append(btn);
-                movieInfo[2].children[0].append(btnEdit);
+                if (movieInfo[2].children.length == 1){
+                    movieInfo[2].append(btn);
+                    movieInfo[2].append(btnEdit);
+                }
     }
 
     static async handleDelete(e) {

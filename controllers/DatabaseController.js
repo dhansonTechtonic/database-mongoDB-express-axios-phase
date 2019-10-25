@@ -7,6 +7,7 @@ router.use(bodyParser.urlencoded({ extended: true, limit: '5mb' }));
 router.use(bodyParser.json());
 
 router.post('/', function (req, res) {
+    console.log(req.body)
     Database.insertMany(
         req.body,
         (err, movie) => {

@@ -70,6 +70,7 @@ header input:focus{
 
 .movie-info{
     display: flex;
+    flex-wrap: wrap;
 }
 
 .viewer{
@@ -102,6 +103,10 @@ header input:focus{
     margin: 0em 0em 0.5em 0em;
 }
 
+.movie-info img {
+    height: 15em;
+}
+
 .movie-info li {
     font-family: abolition-soft, sans-serif;
     font-size: 1.5em;
@@ -125,7 +130,6 @@ header input:focus{
 .movie-info section:nth-child(3){
     border-left: 1px solid black;
     padding-left: 1em;
-    width: 30%;
 }
 
 /*------------------END VIEWER---------------------*/

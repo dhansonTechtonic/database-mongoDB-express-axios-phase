@@ -1,6 +1,6 @@
-# database-read-it-phase
+# database-mongoDB-express-axios-phase
 ## Overview
-- The point of this exercise is to help students be able to read and understand code as well as explain in either a written or oral way what is happening in code. This will increase students' overall comprehension of code and will give them practice since they will be knee deep in new code bases once they hit the floor.
+- The point of this exercise is to help students to be able to set up an application from the ground up using Node.js, express, mongoDB, axios, and mongoose. It is important to know how to do this so students can apply their knowledge to their projects on the floor.
 
 ## Instructions
 1. Open up the index.html file by right clicking on it in VS Code and selecting *Open with Live Server*. If this option does not pop up please ask an instructor for assistance.
@@ -16,4 +16,3 @@
 6. Don't forget to add questions about the code that you have as well as critiques! My code isn't perfect so feel free to respectfully rip into it.
 
 7. When you are done, submit your pull request to your instructor.
-# database-mongoDB-express-fetch-phase

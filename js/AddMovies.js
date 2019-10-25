@@ -23,10 +23,11 @@ class AddMovies{
                 break;
             }
         }
-        MovieDB.postMovie(formData);
+        var movie = await MovieDB.postMovie(formData);
+        Carousel.movies.push(movie);
+        Carousel.populateCarousel(Carousel.movies);
         document.getElementById('addMovieForm').reset();
         document.getElementById('addMovieCoverImage').setAttribute('src', './assets/generic.jpg');
-        Carousel.populateCarousel(await MovieDB.getMovies());
     }
 
     static _handleImageUpload() {
