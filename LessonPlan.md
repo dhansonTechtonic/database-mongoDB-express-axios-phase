@@ -137,7 +137,7 @@ Have the students use the README.md to complete the database project
 
 - [ ] **Provide extension activities for speedy learners**
 
-If they get done early have the students help other students.
+If they get done early have the students help other students, add more functionality, refactor code, or fix little bugs.
 
 - [ ] **Provide break-out sessions to facilitate small-group relearning for those who are struggling (mini-lessons on blockers)**
 
