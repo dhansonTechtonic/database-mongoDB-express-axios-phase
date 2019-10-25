@@ -5,6 +5,9 @@
 ## Instructions
 ### Front End
 #### MovieDB.js
+
+Will be using all static methods
+
 * [x] postMovie: uses axios to post a movie to the database
  
  - parameters: formData
@@ -24,3 +27,23 @@
  * [x] editMovie: uses axios to get a specific movie in the database by id
 
  - parameters: id
+
+ #### Carousel.js
+
+Will be using all static methods. At the end of the file the init function should be called on 'DomContentLoaded'.
+
+ * [x] constructor: will contain an empty array called ```this.movies```
+
+  - parameters: none
+
+ * [x] init: will call ```Carousel.getMovies()```
+
+  - parameters: none
+
+ * [x] getMovies: will be asynchronous and will set ```this.movies``` to the result of ```MovieDB.getMovies()``` and then it will pass ```this.movies``` to ```Carousel.populateCarousel```
+
+  - parameters: none
+
+ * [x] populateCarousel: this will populate the carousel using DOM traversal and manipulation with the movies that are passed to it. If there are no movies, this should be reflected in the UI
+
+ - parameters: movies
