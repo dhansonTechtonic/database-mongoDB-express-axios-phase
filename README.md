@@ -4,8 +4,8 @@
 
 ## Instructions
 ### Front End
-- MovieDB.js
-    [] postMovie: uses axios to post a movie to the database
-        [] parameters: formData
-    [] editMovie: uses axios to edit a movie in the database
-        [] parameters: formData, id
+#### MovieDB.js
+[X] postMovie: uses axios to post a movie to the database
+ -[X] parameters: formData
+[X] editMovie: uses axios to edit a movie in the database
+ -[X] parameters: formData, id
